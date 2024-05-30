@@ -1,0 +1,334 @@
+:root {
+    --primary-color: #478dff; 
+    --secondary-color: #00CED1; 
+    --background-color: #F5F5F5;
+    --text-color: #333;
+    --accent-color: #FFA500;
+    --disabled-color: #A9A9A9;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --link-color: #008B8B;
+    --link-hover-color: #FFD700;
+    --footer-bg-color: #483D8B;
+    --footer-text-color: #FFF;
+    --footer-link-hover-color: #FF4500;
+    --social-icon-color: #FFF;
+    --social-icon-hover-color: #FFD700;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 15px;
+    padding: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand .logo {
+    width: 70px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.brand h1 {
+    font-size: 24px;
+    margin: 0;
+    color: rgb(235, 235, 235) !important;
+}
+
+.main {
+    background-attachment: fixed;
+    background-image: url(../assets/background/bg.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.presentation-element {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 100;
+    font-size: 60px;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.big-btn {
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(49, 109, 219, 0.8);
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.big-btn:hover {
+    background-color: rgba(49, 109, 219, 1);
+    transform: scale(1.05);
+}
+
+.big-btn:disabled {
+    background-color: rgb(153, 153, 153);
+}
+
+.big-btn:disabled:hover {
+    cursor: not-allowed;
+    transform: scale(1.0);
+    animation: shake normal 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+}
+
+.content .description {
+    background-color: rgba(219, 219, 219, 0.9);
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+.content .description p {
+    margin: 10px 0;
+}
+
+.presentation-element hr {
+    border: rgba(37, 37, 37, 0.411) solid 1px;
+    width: 90%;
+}
+
+
+@keyframes sizing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.block {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.block h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.block p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.block button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(49, 109, 219, 0.8);
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.block button:hover {
+    background-color: rgba(49, 109, 219, 1);
+    transform: scale(1.05);
+}
+
+
+.block:hover {
+    transform: translateY(-5px);
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s ease;
+}
+
+li a:hover {
+    color: rgb(219, 219, 219);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content .social-icons {
+    margin-bottom: 20px;
+}
+
+.footer-content .social-icons a {
+    margin: 0 10px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-content .social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-content .social-icons a:hover {
+    color: #3498DB;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    height: 80px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+header ul li {
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.big-btn {
+    background-color: var(--accent-color);
+}
+
+.big-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.big-btn:disabled {
+    background-color: var(--disabled-color);
+}
+
+hr {
+    border: var(--border-color) solid 1px;
+}
+
+ul li {
+    color: var(--link-color);
+}
+
+li a:hover {
+    color: var(--link-hover-color);
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+}
+
+.footer-content .social-icons a {
+    color: var(--social-icon-color);
+}
+
+.footer-content .social-icons a:hover {
+    color: var(--footer-link-hover-color);
+}
+
+.role {
+    padding: 25px 80px;
+}
+
+.Roles {
+    color: var(--link-color);
+    border-radius: 20px;
+    display: flex;
+    width: 40%;
+    padding: 20px;
+    background-color: rgb(244, 244, 244);
+}
+
+.Roles>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.credits-name {
+    list-style: none;
+}
+
+.h4-roles {
+    margin-top: 2%;
+}
