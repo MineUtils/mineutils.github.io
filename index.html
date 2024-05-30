@@ -11,9 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital@0;1&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -89,11 +87,15 @@
                 <li>RevoJava :</li>
                 <li>Nayzox :</li>
                 <li>Linkatel :</li>
+                <br>
+                <li>FloraCloud ></li>
             </ul>
             <ul class="credits-name">
                 <li>Project Manager, Lead Developer</li>
                 <li>UI Designer & Developer</li>
                 <li>UI Designer & Developer</li>
+                <br>
+                <li>API</li>
             </ul>
         </div>
     </div>
@@ -116,7 +118,27 @@
 
 <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
 <script>
-        var scroll = new SmoothScroll('a[href*="#"]', {
+    var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 1200
     });
+
+    let duration = 0.4;
+
+    function animateMenu() {
+        var elements = document.querySelectorAll('header ul li');
+
+        document.querySelectorAll('header ul li').forEach(function(element) {
+            element.style.display = "block"
+        })
+
+        elements.forEach(function(element) {
+            duration += 0.2;
+            element.style.animation = "from-top " + duration + "s"; 
+        });
+
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+        animateMenu();
+    })
 </script>

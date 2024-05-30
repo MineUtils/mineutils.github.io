@@ -64,6 +64,25 @@ header ul li {
     animation: fadeInDown 1s ease-out;
 }
 
+.presentation-element h1 {
+    animation: floating 4s ease-in-out infinite;
+    letter-spacing: 5px;
+    text-shadow: 0 2px 3px #00000049;
+    
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .big-btn {
     padding: 20px 40px;
     border-radius: 10px;
@@ -126,6 +145,20 @@ header ul li {
     }
     to {
         width: 100%;
+    }
+}
+
+@keyframes from-top {
+    0% {
+        margin-top: -300px;
+        opacity: 0;
+        background-color: #000000cb;
+    }
+
+    100% {
+        margin-top: initial;
+        opacity: 1;
+        background-color: transparent;
     }
 }
 
