@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MineUtils Documentation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/fonts.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <h1>MineUtils Documentation</h1>
+    </header>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#usage">Usage</a></li>
+            <li><a href="#configuration">Configuration</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </nav>
+    <section class="main container" id="content">
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to the MineUtils documentation. MineUtils is a comprehensive administration panel for Minecraft
+                servers that works with HTTP and WebSocket. It allows you to manage modules, view and control plugins,
+                check server statistics, and ban or kick users seamlessly.</p>
+        </section>
+
+        <section id="installation">
+            <h2>Installation</h2>
+            <p>To install MineUtils, follow these steps:</p>
+            <ol>
+                <li>Download the latest version from the <a href="https://github.com/MineUtils" target="_blank">GitHub
+                        repository</a>.</li>
+                <li>Extract the files to your desired location on your computer.</li>
+                <li>Run the installer <code>exe</code>.</li>
+            </ol>
+            <p>After installing the panel application on your computer, follow these steps to set up the plugin:</p>
+            <ol>
+                <li>Take the provided plugin and place it in the plugin folder of your Minecraft server.</li>
+                <li>Start your Minecraft server to generate the initial configuration files.</li>
+                <div class="warn">&#9888;&emsp13;Note: make sure that the port you choose is allocated, otherwise the plugin will not start.</div>
+                <li>Edit the <code>config.yml</code> file in the plugin folder to update the configuration with an open port and a secure key:
+                    <pre>key: "your-secure-key"
+port: 25575</pre>
+                </li>
+                <li>Restart your Minecraft server to apply the changes.</li>
+                <li>In the panel application, navigate to the "Servers" tab and link your server by providing all the required information.</li>
+            </ol>
+        </section>
+
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>Once installed, you can start using MineUtils to manage your server:</p>
+            <ul>
+                <li><strong>Modules:</strong> Enable or disable server modules through the panel.</li>
+                <li><strong>Plugins:</strong> View, add, or remove plugins from the server.</li>
+                <li><strong>Statistics:</strong> Monitor server performance and player statistics in real-time.</li>
+                <li><strong>Ban/Kick:</strong> Easily ban or kick players with a few clicks.</li>
+            </ul>
+        </section>
+
+        <section id="configuration">
+            <h2>Configuration</h2>
+            <p></p>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <h3>How do I reset my software?</h3>
+            <p>The software can be reset by clicking on the “Settings” button and then clicking on the “Reset” button at the bottom of the screen.</p>
+            <h3>How do I update MineUtils?</h3>
+            <p>MineUtils panel and MineUtilsCore update themselves automatically, just restart your software and server.</p>
+        </section>
+
+        <section id="support">
+            <h2>Support</h2>
+            <p>If you encounter any issues or have questions, you can reach out to our support team:</p>
+            <div class="support-icons">
+                <a href="#"><img src="../assets/img/discord.gif" alt="Discord">Join our Discord server</a>
+                <a href="https://github.com/MineUtils" target="_blank"><img src="../assets/img/github.gif"
+                        alt="GitHub">Open an issue on GitHub</a>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><img src="../assets/img/discord.gif" alt="Discord"></a>
+                <a href="https://github.com/MineUtils" target="_blank"><img src="../assets/img/github.gif"
+                        alt="GitHub"></a>
+            </div>
+            <p>&copy; 2024 MineUtils by FloraCloud</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1200
+    });
+</script>
+<style>
+    :root {
+        --primary-color: #478dff;
+        --secondary-color: #00CED1;
+        --background-color: #F5F5F5;
+        --text-color: #333;
+        --accent-color: #FFA500;
+        --disabled-color: #A9A9A9;
+        --shadow-color: rgba(0, 0, 0, 0.2);
+        --border-color: rgba(0, 0, 0, 0.1);
+        --link-color: #008B8B;
+        --link-hover-color: #FFD700;
+        --footer-bg-color: #483D8B;
+        --footer-text-color: #FFF;
+        --footer-link-hover-color: #FF4500;
+        --social-icon-color: #FFF;
+        --social-icon-hover-color: #FFD700;
+    }
+
+    .warn {
+        background-color: #ff1100;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    body,
+    html {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        height: 80px;
+        background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-shadow: 0 4px 8px var(--shadow-color);
+        color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .sidebar {
+        width: 200px;
+        background-color: var(--text-color);
+        color: white;
+        height: calc(100vh - 80px);
+        position: fixed;
+        top: 80px;
+        left: 0;
+        overflow-y: auto;
+        box-shadow: 2px 0 5px var(--shadow-color);
+    }
+
+    @media (max-width: 720px) {
+        .sidebar {
+            width: 120px;
+            top: 50px !important;
+        }
+
+        .main, .container {
+            margin-left: 120px !important;
+            margin-top: 50px !important;
+        }
+
+        header {
+            font-size: 10px;
+            height: 50px;
+        }
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar ul li {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .sidebar ul li a {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+        background-color: var(--link-hover-color);
+        color: var(--text-color);
+    }
+
+    .sidebar ul li a.active {
+        background-color: var(--link-color);
+        color: white;
+        font-weight: bold;
+    }
+
+    .main {
+        margin-left: 220px;
+        padding: 20px;
+        background-color: var(--background-color);
+        margin-top: 80px;
+        margin-bottom: 70px;
+    }
+
+    .main.container h2 {
+        color: var(--primary-color);
+    }
+
+    .main.container p,
+    .main.container ul,
+    .main.container ol,
+    .main.container pre {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: var(--footer-bg-color);
+        color: var(--footer-text-color);
+        padding: 10px 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content .social-icons {
+        margin-bottom: 20px;
+    }
+
+    .footer-content .social-icons a {
+        margin: 0 10px;
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+    .footer-content .social-icons a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-content .social-icons a:hover {
+        color: #3498DB;
+    }
+
+    .footer-content .social-icons a {
+        color: var(--social-icon-color);
+    }
+
+    .footer-content .social-icons a:hover {
+        color: var(--footer-link-hover-color);
+    }
+
+    .support-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .support-icons a {
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+        text-decoration: none;
+        color: var(--text-color);
+        transition: color 0.3s;
+    }
+
+    .support-icons a img {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .support-icons a:hover {
+        color: var(--link-hover-color);
+    }
+
+    pre {
+        background-color: var(--text-color);
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #333;
+        width: auto;
+    }
+</style>
