@@ -16,6 +16,19 @@
     --social-icon-hover-color: #FFD700;
 }
 
+header {
+    width: 100%;
+    max-width: 100%;
+
+    height: 80px;
+    max-height: 150px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
 header ul {
     display: flex;
     list-style: none;
@@ -26,6 +39,9 @@ header ul {
 header ul li {
     margin: 0 15px;
     padding: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: var(--text-color);
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -309,22 +325,6 @@ html {
     width: 100%;
 }
 
-header {
-    height: 80px;
-    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-shadow: 0 4px 8px var(--shadow-color);
-}
-
-header ul li {
-    color: var(--text-color);
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
 .big-btn {
     background-color: var(--accent-color);
 }
@@ -370,7 +370,7 @@ footer {
     color: var(--link-color);
     border-radius: 20px;
     display: flex;
-    width: 40%;
+    width: 80%;
     padding: 20px;
     background-color: rgb(244, 244, 244);
 }
